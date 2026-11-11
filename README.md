@@ -4,8 +4,6 @@ A tiny AutoHotkey v2 tool that dims the Windows taskbar to help protect OLED dis
 
 The taskbar stays dark while you are not using it, smoothly returns to normal when you hover over it, and fades back to dark when the cursor leaves.
 
-> Short description for the GitHub repo field:
-> **Dim the Windows taskbar on OLED screens to reduce burn-in. Smooth fade on hover, quick opacity toggles, tray popup. AutoHotkey v2.**
 
 ## Features
 
@@ -69,14 +67,14 @@ The value shown in the popup is the **visibility of the taskbar**, not of the ov
 
 ### `settings.ini`
 
-Created automatically in the script folder:
+Created automatically in the script folder on the first run (default value shown):
 
 ```ini
 [Settings]
-Alpha=196
+Alpha=13
 ```
 
-`Alpha` is the opacity of the black overlay (`0` = no dimming, `255` = fully black). `196` is roughly 23% taskbar visibility. You normally never edit this by hand: use the popup or the hotkeys.
+`Alpha` is the opacity of the black overlay (`0` = no dimming, `255` = fully black). `13` is roughly 95% taskbar visibility; for example `196` is roughly 23%. You normally never edit this by hand: use the popup or the hotkeys. If you delete the file, it is recreated with the default value.
 
 ### Animation speed
 
